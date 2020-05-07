@@ -1,0 +1,18 @@
+ <%= render 'shared/error_messages' %>
+
+		      <%= f.label :name, "Nome" %>
+		      <%= f.text_field :name, class: 'form-control center' %>
+
+		      <%= f.label :email %>
+	     	  <%= f.text_field :email, class: 'form-control center' %>
+
+		      <%= f.label :password %>
+		      <%= f.password_field :password, class: 'form-control center' %>
+
+		      <%= f.label :password_confirmation, "Conferma password" %>
+		      <%= f.password_field :password_confirmation, class: 'form-control center' %>
+
+		      <%= f.label :subscribe, class: "checkbox inline" do %>
+        	  <%= f.check_box :subscribe, { checked: true, class: 'form-check-input cb' }, 'true', 'false' %>
+        	  <span>Iscriviti alla nostra Newsletter Settimanale</span>
+      		  <% end %>

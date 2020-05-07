@@ -1,0 +1,11 @@
+<h1>Cut Down Records</h1>
+
+<p>Ciao <%= @user.name %>,</p>
+
+<p>
+Benvenuto alla Cut Down Records, grazie per esserti registrato!<br>
+Clicca sul link per attivare il tuo account:
+</p>
+
+<%= link_to "Attiva", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>

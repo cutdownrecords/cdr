@@ -1,0 +1,25 @@
+<% provide(:title, "Edit user") %>
+<div class="signup">
+<h1>Modifica il tuo profilo</h1>
+
+<div class="container">
+<div class="center">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+      <%= render 'editfields', f: f %>
+      <%= f.submit "Salva modifiche", class: "btn btn-primary" %>
+    <% end %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target=_blank>Cambia Immagine</a>
+    </div>
+  </div>
+
+</div>
+</div>

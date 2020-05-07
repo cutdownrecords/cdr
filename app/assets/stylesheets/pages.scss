@@ -1,0 +1,56 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body div.home{ 
+ /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://bitbucket.org/Cutdownrecords/cutdownrecords/raw/0f7880d9b79ba1deb104957a49833ed4f820aaf3/app/assets/images/background1.png");
+}
+
+body div.contatti {
+	 background-image: url('https://bitbucket.org/Cutdownrecords/cutdownrecords/raw/0f7880d9b79ba1deb104957a49833ed4f820aaf3/app/assets/images/background3.jpg');
+ /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding-bottom: 50px;
+}
+
+body div.lavori {
+	 background-image: url('https://bitbucket.org/Cutdownrecords/cutdownrecords/raw/0f7880d9b79ba1deb104957a49833ed4f820aaf3/app/assets/images/background2.jpg');
+ /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding-bottom: 50px;
+}
+
+body div.dove {
+   background-image: url('https://bitbucket.org/Cutdownrecords/cutdownrecords/raw/0f7880d9b79ba1deb104957a49833ed4f820aaf3/app/assets/images/background4.jpg');
+ /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding-bottom: 50px;
+}
+
+div.utente {
+  padding-bottom: 50px;
+  padding-top: 75px;
+}
+
+div.signup {
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+
+.gravatar-edit {
+  margin-bottom: 25px;
+}

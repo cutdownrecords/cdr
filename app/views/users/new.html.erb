@@ -1,0 +1,17 @@
+<% provide(:title, 'Sign up') %>
+<div class="signup">
+<h1>Registrati</h1>
+
+<div class="container">
+	<div class="center">
+		<div class="row">
+		  <div class="col-sm-6 col-sm-offset-3">
+		    <%= form_for(@user) do |f| %>
+		   <%= render 'fields', f: f %>
+		      <%= f.submit "Crea il mio account", class: "btn btn-primary" %>
+		    <% end %>
+		  </div>
+		</div>
+	</div>
+</div>
+</div>
