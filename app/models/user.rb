@@ -11,7 +11,6 @@ class User < ApplicationRecord
     validates :password, length: { minimum: 6 }, allow_blank: true
     validates :subscribe, inclusion: { in: [true, false]}
 
-    class << self
   # Returns the hash digest of the given string.
   def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
@@ -23,7 +22,6 @@ class User < ApplicationRecord
   def self.new_token
     SecureRandom.urlsafe_base64
   end
-end
   
     # Remembers a user in the database for use in persistent sessions.
   def remember
